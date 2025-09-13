@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Lato:wght@300;400;700&display=swap');
+@import "tailwindcss";
+
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: #FFFFFF; /* white background */
+  color: #4A4A4A;
+}
+/* Card link arrow animation */
+.card-link-arrow::after {
+  content: '';
+  transition: transform 0.3s ease;
+  display: inline-block;
+}
+.group:hover .card-link-arrow::after {
+  transform: translateX(5px);
+}
